@@ -1,0 +1,41 @@
+{
+  "name": "@jgarber/stylelint-config-scss",
+  "version": "0.1.0",
+  "description": "Shareable Stylelint configuration for SCSS syntax Sass files.",
+  "keywords": [
+    "stylelint",
+    "stylelintconfig",
+    "scss"
+  ],
+  "homepage": "https://github.com/jgarber623/stylelint-config-scss",
+  "bugs": "https://github.com/jgarber623/stylelint-config-scss/issues",
+  "license": "MIT",
+  "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
+  "main": "index.js",
+  "repository": "github:jgarber623/stylelint-config-scss",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jasmine"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@jgarber/eslint-config": "^1.1.0",
+    "globals": "^13.20.0",
+    "jasmine": "^5.1.0",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard-scss": "^10.0.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-stylistic": "^0.4.3"
+  },
+  "peerDependencies": {
+    "stylelint": ">=15.10",
+    "stylelint-config-standard-scss": ">=10.0",
+    "stylelint-order": ">=6.0",
+    "stylelint-stylistic": ">=0.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
