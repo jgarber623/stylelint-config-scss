@@ -1,6 +1,6 @@
 {
   "name": "@jgarber/stylelint-config-scss",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Shareable Stylelint configuration for SCSS syntax Sass files.",
   "keywords": [
     "stylelint",
