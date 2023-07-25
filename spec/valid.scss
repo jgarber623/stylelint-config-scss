@@ -13,7 +13,14 @@ html { color: colors.$red; }
     @extend %foo;
 
     background: blue;
-    @extend %bar;
+
+    @include foo {
+      color: blue;
+    }
+
+    @include foo {
+      color: red;
+    }
   }
 }
 
