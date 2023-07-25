@@ -6,6 +6,20 @@ module.exports = {
   plugins: ['stylelint-order'],
   rules: {
     /*
+     * Require an empty line before at-rules.
+     *
+     * @see {@linke https://stylelint.io/user-guide/rules/at-rule-empty-line-before/}
+     */
+    'at-rule-empty-line-before': [
+      'always',
+      {
+        except: ['after-same-name', 'first-nested', 'inside-block'],
+        ignore: ['after-comment'],
+        ignoreAtRules: ['else']
+      }
+    ],
+
+    /*
      * Specify the alphabetical order of properties within declaration blocks.
      *
      * @see {@link https://github.com/hudochenkov/stylelint-order/blob/master/rules/properties-alphabetical-order/README.md}
