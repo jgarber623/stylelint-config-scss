@@ -2,8 +2,7 @@
 
 Shareable [Stylelint](https://stylelint.io) configuration for SCSS syntax [Sass](https://sass-lang.com) files.
 
-> **Note**
->
+> ![NOTE]
 > See [@jgarber/eslint-config](https://www.npmjs.com/package/@jgarber/stylelint-config) for a shareable Stylelint configuration suitable for CSS files.
 
 ## Installation
