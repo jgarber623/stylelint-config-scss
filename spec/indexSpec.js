@@ -1,3 +1,4 @@
+const fs = require('node:fs');
 const stylelint = require('stylelint');
 
 const config = require('../index');
@@ -13,14 +14,14 @@ it('exports an Object', () => {
 });
 
 it('loads the config and validates correct syntax', async () => {
-  const code = '@use "colors";\n\nhtml { color: colors.$red; }\n';
+  const code = fs.readFileSync('./spec/valid.scss', 'utf8');
   const { errored } = await stylelint.lint({ code, config });
 
   expect(errored).toBe(false);
 });
 
 it('loads the config and invalidates incorrect syntax', async () => {
-  const code = '/* */\n@foo "bar.scss";\n\nhtml { & > body { color: $blue; } }\n';
+  const code = fs.readFileSync('./spec/invalid.scss', 'utf8');
   const { errored, results } = await stylelint.lint({ code, config });
 
   expect(errored).toBe(true);

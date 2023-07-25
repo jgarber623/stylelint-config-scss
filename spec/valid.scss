@@ -1,0 +1,26 @@
+@use "colors";
+
+@import "foo";
+@import "bar.css";
+
+// comment
+@media (width < 24rem) { html { color: colors.$green; } }
+
+html { color: colors.$red; }
+
+@media (width > 24rem) {
+  body {
+    @extend %foo;
+
+    background: blue;
+    @extend %bar;
+  }
+}
+
+p {
+  @if true {
+    font-size: 10px;
+  } @else {
+    font-size: 1rem;
+  }
+}
