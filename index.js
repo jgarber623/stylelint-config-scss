@@ -113,6 +113,18 @@ module.exports = {
     'scss/selector-no-union-class-name': true,
 
     /*
+     * Require a newline after the closing brace of blocks.
+     *
+     * @see {@link https://github.com/elirasza/stylelint-stylistic/tree/main/lib/rules/block-closing-brace-newline-after}
+     */
+    'stylistic/block-closing-brace-newline-after': [
+      'always',
+      {
+        ignoreAtRules: ['if', 'else']
+      }
+    ],
+
+    /*
      * Specify Unix or Windows linebreaks.
      *
      * @see {@link https://github.com/elirasza/stylelint-stylistic/tree/main/lib/rules/linebreaks}
