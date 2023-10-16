@@ -11,14 +11,17 @@
   "bugs": "https://github.com/jgarber623/stylelint-config-scss/issues",
   "license": "MIT",
   "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
-  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./index.js"
+  },
   "repository": "github:jgarber623/stylelint-config-scss",
   "scripts": {
     "lint": "eslint .",
     "test": "jasmine"
-  },
-  "engines": {
-    "node": ">=16.0.0"
   },
   "devDependencies": {
     "@jgarber/eslint-config": "^1.1.1",
@@ -34,6 +37,9 @@
     "stylelint-config-standard-scss": ">=10.0",
     "stylelint-order": ">=6.0",
     "stylelint-stylistic": ">=0.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "publishConfig": {
     "access": "public"
