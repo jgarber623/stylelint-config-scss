@@ -2,8 +2,12 @@
 
 Shareable [Stylelint](https://stylelint.io) configuration for SCSS syntax [Sass](https://sass-lang.com) files.
 
+[![npm](https://img.shields.io/npm/v/@jgarber/stylelint-config-scss.svg?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@jgarber/stylelint-config-scss)
+[![Downloads](https://img.shields.io/npm/dt/@jgarber/stylelint-config-scss.svg?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@jgarber/stylelint-config-scss)
+[![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/stylelint-config-scss/ci.yml?branch=main&logo=github&style=for-the-badge)](https://github.com/jgarber623/stylelint-config-scss/actions/workflows/ci.yml)
+
 > [!NOTE]\
-> See [@jgarber/eslint-config](https://www.npmjs.com/package/@jgarber/stylelint-config) for a shareable Stylelint configuration suitable for CSS files.
+> See [@jgarber/stylelint-config](https://www.npmjs.com/package/@jgarber/stylelint-config) for a shareable Stylelint configuration suitable for CSS files.
 
 ## Installation
 
@@ -48,7 +52,6 @@ In a JavaScript file using [ECMAScript module (ESM)](https://nodejs.org/api/esm.
 
 ```js
 // stylelint.config.mjs
-
 import config from '@jgarber/stylelint-config-scss';
 
 export default config;
