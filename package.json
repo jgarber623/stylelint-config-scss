@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "stylelint-config-standard-scss": "^11.0.0",
-    "stylelint-order": "^6.0.3",
+    "stylelint-order": "^6.0.4",
     "stylelint-stylistic": "^0.4.3"
   },
   "devDependencies": {
