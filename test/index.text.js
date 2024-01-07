@@ -30,8 +30,8 @@ test('loads the configuration and invalidates incorrect syntaxx', async t => {
       warnings: [
         { rule: 'scss/comment-no-loud' },
         { rule: 'scss/selector-no-redundant-nesting-selector' },
-        { rule: 'scss/at-rule-no-unknown' },
-        { rule: 'scss/comment-no-empty' }
+        { rule: 'scss/comment-no-empty' },
+        { rule: 'scss/at-rule-no-unknown' }
       ]
     }
   ]);
