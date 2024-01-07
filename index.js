@@ -1,8 +1,5 @@
 module.exports = {
-  extends: [
-    'stylelint-config-standard-scss',
-    'stylelint-stylistic/config'
-  ],
+  extends: ['stylelint-config-standard-scss', '@stylistic/stylelint-config'],
   plugins: ['stylelint-order'],
   rules: {
     // Require an empty line before at-rules.
@@ -98,8 +95,8 @@ module.exports = {
 
     // Require a newline after the closing brace of blocks.
     //
-    // https://github.com/elirasza/stylelint-stylistic/tree/main/lib/rules/block-closing-brace-newline-after
-    'stylistic/block-closing-brace-newline-after': [
+    // https://github.com/stylelint-stylistic/stylelint-stylistic/tree/main/lib/rules/block-closing-brace-newline-after
+    '@stylistic/block-closing-brace-newline-after': [
       'always',
       {
         ignoreAtRules: ['if', 'else']
@@ -108,12 +105,12 @@ module.exports = {
 
     // Specify Unix or Windows linebreaks.
     //
-    // https://github.com/elirasza/stylelint-stylistic/tree/main/lib/rules/linebreaks
-    'stylistic/linebreaks': 'unix',
+    // https://github.com/stylelint-stylistic/stylelint-stylistic/tree/main/lib/rules/linebreaks
+    '@stylistic/linebreaks': 'unix',
 
     // Disallow the Unicode Byte Order Mark.
     //
-    // https://github.com/elirasza/stylelint-stylistic/tree/main/lib/rules/unicode-bom
-    'stylistic/unicode-bom': 'never'
+    // https://github.com/stylelint-stylistic/stylelint-stylistic/tree/main/lib/rules/unicode-bom
+    '@stylistic/unicode-bom': 'never'
   }
 };
