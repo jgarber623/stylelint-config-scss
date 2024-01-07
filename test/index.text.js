@@ -6,10 +6,7 @@ const config = require('../index');
 
 test('module.exports', t => {
   t.like(config, {
-    extends: [
-      'stylelint-config-standard-scss',
-      'stylelint-stylistic/config'
-    ],
+    extends: ['stylelint-config-standard-scss', '@stylistic/stylelint-config'],
     plugins: ['stylelint-order']
   });
 });
