@@ -27,7 +27,7 @@
     "stylelint-order": "^6.0.4"
   },
   "devDependencies": {
-    "@jgarber/eslint-config": "^5.0.0",
+    "@jgarber/eslint-config": "^6.1.0",
     "stylelint": "^16.2.1"
   },
   "peerDependencies": {
