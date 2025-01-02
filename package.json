@@ -1,6 +1,6 @@
 {
   "name": "@jgarber/stylelint-config-scss",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Shareable Stylelint configuration for SCSS syntax Sass files.",
   "keywords": [
     "stylelint",
@@ -22,16 +22,16 @@
     "test": "NODE_V8_COVERAGE=coverage node --experimental-test-coverage --test"
   },
   "dependencies": {
-    "@stylistic/stylelint-config": "^1.0.1",
-    "stylelint-config-standard-scss": "^13.1.0",
+    "@stylistic/stylelint-config": "^2.0.0",
+    "stylelint-config-standard-scss": "^14.0.0",
     "stylelint-order": "^6.0.4"
   },
   "devDependencies": {
-    "@jgarber/eslint-config": "^6.1.0",
-    "stylelint": "^16.7.0"
+    "@jgarber/eslint-config": "^7.0.0",
+    "stylelint": "^16.12.0"
   },
   "peerDependencies": {
-    "stylelint": ">=16.1"
+    "stylelint": ">=16.12.0"
   },
   "engines": {
     "node": ">=18.12.0"
