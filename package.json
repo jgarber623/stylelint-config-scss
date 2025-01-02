@@ -11,10 +11,10 @@
   "bugs": "https://github.com/jgarber623/stylelint-config-scss/issues",
   "license": "MIT",
   "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
+  "type": "module",
   "files": [
     "index.js"
   ],
-  "type": "module",
   "exports": "./index.js",
   "repository": "github:jgarber623/stylelint-config-scss",
   "scripts": {
