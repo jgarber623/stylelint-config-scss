@@ -16,7 +16,7 @@
     "index.js"
   ],
   "exports": "./index.js",
-  "repository": "github:jgarber623/stylelint-config-scss",
+  "repository": "https://github.com/jgarber623/stylelint-config-scss",
   "scripts": {
     "lint": "npx eslint .",
     "test": "NODE_V8_COVERAGE=coverage node --experimental-test-coverage --test"
@@ -37,6 +37,7 @@
     "node": ">=18.12.0"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   }
 }
